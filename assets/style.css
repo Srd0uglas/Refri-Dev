@@ -55,3 +55,19 @@
     transform: translate(-50%, -50%);
 
 }
+
+#back, #next{
+    position: absolute;
+    top: 50%;
+    transform: scaleY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: #eee9;
+    border: 1px solid #eee9;
+    color: #eee9;
+    font-size: x-large;
+    font-family: monospace;
+    cursor: pointer;
+    z-index: 4;
+    border-radius: 50px;
+}
