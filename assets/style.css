@@ -20,6 +20,9 @@
 }
 .item.active{
     display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .item .title{
@@ -34,15 +37,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-
+    z-index: 2;
 }
 .item .fruit{
     width: 90%;
     position: absolute;
     top: 0;
     /* ficou na frente de todo mundo */
-    z-index: 3;
+    
 }
 
 .item .refri{
@@ -50,16 +52,17 @@
     width: 600px;
     position: absolute;
     /* centralizou a imagem */
-    top: 50%;
+    /* top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+   
 
 }
 
 #back, #next{
     position: absolute;
     top: 50%;
-    transform: scaleY(-50%);
+    transform: translateY(-50%);
     width: 50px;
     height: 50px;
     background-color: #eee9;
@@ -68,6 +71,48 @@
     font-size: x-large;
     font-family: monospace;
     cursor: pointer;
+    /* sempre fica na frente de todo mundo */
     z-index: 4;
-    border-radius: 50px;
+    border-radius: 50%;
+}
+
+/* botão gruda na esquerda */
+#back{
+    left: 30px;
+}
+/* botão gruda na dieita */
+#next{
+    right: 30px;
+}
+
+/* animações */
+
+@keyframes toActive{
+    from{
+        top: 0%;
+        opacity: 0;
+    }
+}
+
+.item.active img.fruit{
+    animation: toActive 0.5s ease-in-out 1;
+}
+.item.active .title{
+    animation: toActive 0.5s ease-in-out 1;
+}
+
+@keyframes moverLata{
+    from{
+          transform: translateY(50px);
+    }
+    to{
+        /* Ponto inicial */
+        transform: translateY(-50px );
+    }
+
+   
+}
+.item.active img.refri{
+    animation: moverLata 3.5s infinite alternate ease-in-out ;
+
 }
