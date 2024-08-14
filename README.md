@@ -9,7 +9,9 @@ Características
 * Design responsivo para diferentes tamanhos de tela
 
 Como usar:
+
 1º Abra o index.htmlarquivo em um navegador da web para visualizar a apresentação.
+
 2º Use os botões de navegação para mover entre os slides.
 
 Detalhes técnicos:
