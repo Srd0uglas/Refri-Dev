@@ -1,10 +1,12 @@
 Apresentação de slides com animações
+![image](https://github.com/user-attachments/assets/235834b2-709a-441c-bdf3-3ba283c4d41c)
+
 Visão geral
 Este projeto é uma apresentação de slides com animações, criada usando HTML, CSS e JavaScript. A apresentação apresenta uma série de slides com elementos animados, incluindo um título, imagem de fruta e imagem de geladeira.
 
 Características
 * Título animado e imagem de fruta em cada slide
-* Imagem animada de geladeira que se move para cima e para baixo
+* Imagem animada de uma lata que se move para cima e para baixo
 * Botões de navegação para mover entre slides
 * Design responsivo para diferentes tamanhos de tela
 
